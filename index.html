@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GYM FITNESS MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>GYM FITNESS MANAGEMENT SYSTEM</h1>
+    <nav>
+        <a href="index.html">BOOKING</a>
+        <a href="trainers.html">TRAINERS</a>
+        <a href="about.html">ABOUT</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Reservation Form</h2>
+
+    <label>Name:</label>
+    <input id="name">
+
+    <label>Address:</label>
+    <input id="address">
+
+    <label>Age:</label>
+    <input id="age" type="number">
+
+    <label>Contact Number:</label>
+    <input id="contact">
+
+    <label>Select Day:</label>
+    <select id="day">
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+    </select>
+
+    <label>Select Time:</label>
+    <select id="time">
+        <option>8:00 AM</option>
+        <option>10:00 AM</option>
+        <option>1:00 PM</option>
+        <option>3:00 PM</option>
+        <option>5:00 PM</option>
+    </select>
+
+    <label>Membership Type:</label>
+    <select id="membership">
+        <option>Regular</option>
+        <option>Premium</option>
+        <option>VIP</option>
+    </select>
+
+    <a class="btn" href="trainers.html" onclick="saveReservation()">Select Trainer</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
